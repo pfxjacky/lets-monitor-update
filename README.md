@@ -28,14 +28,14 @@ Python 3.8+
 MongoDB：必须确保 MongoDB 服务已启动并运行在默认端口 27017（或需手动修改配置）。
 
 2. 获取源代码
-Bash
+
 
 git clone https://github.com/pfxjacky/lets-monitor-update.git
 cd lets-monitor-update
 3. 安装依赖
 建议使用虚拟环境：
 
-Bash
+
 
 # 创建虚拟环境
 python3 -m venv venv
@@ -48,12 +48,12 @@ pip install -r requirements.txt
 
 创建数据目录：
 
-Bash
+
 
 mkdir data
 配置 Config 文件： 复制示例配置文件。根据原版文档说明，通常需要将 example.json 复制为 config.json。
 
-Bash
+
 
 cp example.json config.json
 注意：如果程序报错找不到配置，尝试将 config.json 移动到 data/ 目录下（cp example.json data/config.json），因为新版可能调整了路径结构。
@@ -65,14 +65,13 @@ cp example.json config.json
 
 启动 Web 管理界面（推荐）：
 
-Bash
 
 python web.py
 运行后访问 http://localhost:5556。
 
 仅运行核心监控（无 GUI）：
 
-Bash
+
 
 python core.py
 部署后配置指南（Web 面板设置）
